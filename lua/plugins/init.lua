@@ -16,7 +16,20 @@ return {
     event={'InsertEnter','CmdlineEnter'},
     branch='v0.6', --recomended as each new version will have breaking changes
     opts={
-        --Config goes here
+      --Config goes here
     },
-}
+  },
+  {
+    -- Set lualine as statusline
+    'nvim-lualine/lualine.nvim',
+    -- See `:help lualine.txt`
+    opts = {
+      options = {
+        icons_enabled = true,
+        theme = 'nightfly',
+        component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
+      },
+    },
+  },
 }
