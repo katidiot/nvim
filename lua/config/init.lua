@@ -1,5 +1,5 @@
 require("asid.remap")
-require("asid.set")
+require("asid.options")
 
-vim.g.rustfmt_autosave = 1
+--vim.g.rustfmt_autosave = 1
 --vim.cmd("colorscheme nightfox")
